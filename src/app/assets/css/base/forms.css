@@ -1,0 +1,223 @@
+/*----------------------------------------------
+    # Form styles here
+----------------------------------------------*/
+.form-contl {
+  position: relative;
+  margin-top: 30px;
+}
+.form-contl input {
+  position: relative;
+  padding: 17px 20px;
+  height: 60px;
+  background: var(--theme2);
+  width: 100%;
+  border: 1px solid #6e6e6e;
+  opacity: 0.8;
+}
+.form-contl input::placeholder {
+  color: var(--white);
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26.08px;
+}
+.form-contl input.style2 {
+  border: none;
+}
+.form-contl button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: var(--theme);
+  color: var(--white);
+}
+.form-contl button.style2 {
+  background: transparent;
+  color: var(--theme);
+}
+
+input.form-control,
+textarea.form-control {
+  outline: none;
+  box-shadow: none;
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  padding: 17px 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  outline: none;
+  box-shadow: none;
+}
+
+label {
+  color: var(--title);
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35.04px;
+}
+
+.form-group {
+  margin-bottom: var(--bs-gutter-x);
+  position: relative;
+}
+
+.form-group > i {
+  display: inline-block;
+  position: absolute;
+  right: 25px;
+  top: 13px;
+  font-size: 16px;
+  color: var(--text);
+}
+
+.form-group > i.fa-envelope {
+  padding-top: 1px;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="checkbox"] {
+  visibility: hidden;
+  opacity: 0;
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+input[type="checkbox"]:checked ~ label:after {
+  opacity: 1;
+}
+
+input[type="checkbox"] ~ label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  display: block;
+  line-height: 30px;
+}
+
+input[type="checkbox"] ~ label:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 3.5px;
+  background: var(--white);
+  border: 1px solid var(--border-2);
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  z-index: 9;
+}
+
+input[type="checkbox"] ~ label:after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 9px;
+  background: var(--theme);
+  height: 8px;
+  width: 8px;
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+  z-index: 9;
+}
+
+input[type="checkbox"].style2 ~ label {
+  color: #8b929c;
+  padding-left: 23px;
+  margin-bottom: -0.5em;
+}
+
+input[type="checkbox"].style2 ~ label:before {
+  background-color: white;
+  border: 1px solid #f7ccd7;
+  height: 14px;
+  width: 14px;
+  line-height: 14px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  top: 6px;
+}
+
+input[type="checkbox"].style2:checked ~ label:before {
+  color: var(--theme);
+}
+
+input[type="radio"] {
+  visibility: hidden;
+  opacity: 0;
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+input[type="radio"] ~ label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  line-height: 1;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+input[type="radio"] ~ label::before {
+  content: "\f111";
+  position: absolute;
+  font-family: "Font Awesome 6 Pro";
+  left: 0;
+  top: -2px;
+  width: 20px;
+  height: 20px;
+  padding-left: 0;
+  font-size: 0.6em;
+  line-height: 19px;
+  text-align: center;
+  border: 1px solid var(--theme);
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  font-weight: 700;
+  background: var(--white);
+  color: transparent;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+input[type="radio"]:checked ~ label::before {
+  border-color: var(--theme);
+  background-color: var(--theme);
+  color: var(--white);
+}

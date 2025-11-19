@@ -1,0 +1,195 @@
+/*----------------------------------------------
+    # Testimonials section styles here
+----------------------------------------------*/
+.testimonial-wrapper {
+  position: relative;
+  overflow: hidden;
+  z-index: 9;
+}
+
+.testimonial-wrapper .section-title-area {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.testimonial-wrapper .section-title-area .title {
+  margin-bottom: 20px;
+}
+
+.testimonial-wrapper .section-title-area .title .title-heading {
+  display: inline-block;
+  padding: 8px 24px;
+  background-color: var(--theme2);
+  color: var(--title);
+  font-family: "Urbanist", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 20px;
+  border-radius: 60px;
+  transform: rotate(-20deg);
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+}
+
+.testimonial-wrapper .section-title-area h2 {
+  color: var(--title);
+  font-family: "Urbanist", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+.testimonial-wrapper .section-title-area p {
+  color: var(--text);
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.testimonial-wrapper .testimonial-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-wrapper .testimonial-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--theme);
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+}
+
+.testimonial-wrapper .testimonial-card:hover::before {
+  opacity: 1;
+}
+
+.testimonial-wrapper .testimonial-card:hover {
+  border-color: var(--theme);
+  transform: translateY(-10px);
+  box-shadow: 0px 20px 40px rgba(116, 68, 253, 0.15);
+}
+
+.testimonial-wrapper .testimonial-card .quote-icon {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: var(--theme2);
+  border-radius: 50%;
+  margin: 0 auto 30px;
+  transition: all 0.4s ease-in-out;
+}
+
+.testimonial-wrapper .testimonial-card:hover .quote-icon {
+  background: var(--white);
+  color: var(--theme);
+}
+
+.testimonial-wrapper .testimonial-card .content {
+  margin-bottom: 30px;
+}
+
+.testimonial-wrapper .testimonial-card .content p {
+  color: var(--text);
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 20px;
+  transition: all 0.4s ease-in-out;
+}
+
+.testimonial-wrapper .testimonial-card:hover .content p {
+  color: var(--white);
+}
+
+.testimonial-wrapper .testimonial-card .author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.testimonial-wrapper .testimonial-card .author .thumb {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.testimonial-wrapper .testimonial-card .author .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-wrapper .testimonial-card .author .info h5 {
+  color: var(--title);
+  font-family: "Urbanist", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 5px;
+  transition: all 0.4s ease-in-out;
+}
+
+.testimonial-wrapper .testimonial-card:hover .author .info h5 {
+  color: var(--white);
+}
+
+.testimonial-wrapper .testimonial-card .author .info span {
+  color: var(--text);
+  font-family: "Urbanist", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: all 0.4s ease-in-out;
+}
+
+.testimonial-wrapper .testimonial-card:hover .author .info span {
+  color: var(--white);
+}
+
+@media (max-width: 991px) {
+  .testimonial-wrapper .section-title-area h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .testimonial-wrapper .section-title-area h2 {
+    font-size: 28px;
+  }
+
+  .testimonial-wrapper .testimonial-card {
+    padding: 30px 20px;
+  }
+}

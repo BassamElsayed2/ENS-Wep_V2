@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "title": {
+      "en": "Basic Plan",
+      "ar": "الخطة الأساسية"
+    },
+    "price": "$29",
+    "items": [
+      {
+        "en": "5 Projects",
+        "ar": "5 مشاريع"
+      },
+      {
+        "en": "10 GB Storage",
+        "ar": "10 جيجا تخزين"
+      },
+      {
+        "en": "Email Support",
+        "ar": "دعم عبر البريد"
+      },
+      {
+        "en": "Basic Features",
+        "ar": "مميزات أساسية"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": {
+      "en": "Professional Plan",
+      "ar": "الخطة الاحترافية"
+    },
+    "price": "$59",
+    "items": [
+      {
+        "en": "20 Projects",
+        "ar": "20 مشروع"
+      },
+      {
+        "en": "50 GB Storage",
+        "ar": "50 جيجا تخزين"
+      },
+      {
+        "en": "Priority Support",
+        "ar": "دعم ذو أولوية"
+      },
+      {
+        "en": "Advanced Features",
+        "ar": "مميزات متقدمة"
+      },
+      {
+        "en": "Custom Domain",
+        "ar": "نطاق مخصص"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": {
+      "en": "Enterprise Plan",
+      "ar": "خطة المؤسسات"
+    },
+    "price": "$99",
+    "items": [
+      {
+        "en": "Unlimited Projects",
+        "ar": "مشاريع غير محدودة"
+      },
+      {
+        "en": "Unlimited Storage",
+        "ar": "تخزين غير محدود"
+      },
+      {
+        "en": "24/7 Support",
+        "ar": "دعم على مدار الساعة"
+      },
+      {
+        "en": "All Features",
+        "ar": "جميع المميزات"
+      },
+      {
+        "en": "Custom Integrations",
+        "ar": "تكاملات مخصصة"
+      },
+      {
+        "en": "Dedicated Manager",
+        "ar": "مدير مخصص"
+      }
+    ]
+  }
+]
+

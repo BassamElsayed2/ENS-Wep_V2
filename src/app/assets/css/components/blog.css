@@ -1,0 +1,182 @@
+/*----------------------------------------------
+    # Blog section styles here
+----------------------------------------------*/
+.blog-wrapper {
+  position: relative;
+  overflow: hidden;
+  z-index: 9;
+}
+
+.blog-wrapper .section-title-area {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.blog-wrapper .section-title-area .title {
+  margin-bottom: 20px;
+}
+
+.blog-wrapper .section-title-area .title .title-heading {
+  display: inline-block;
+  padding: 8px 24px;
+  background-color: var(--theme2);
+  color: var(--title);
+  font-family: "Urbanist", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 20px;
+  border-radius: 60px;
+  transform: rotate(-20deg);
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+}
+
+.blog-wrapper .section-title-area h2 {
+  color: var(--title);
+  font-family: "Urbanist", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+.blog-wrapper .section-title-area p {
+  color: var(--text);
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.blog-wrapper .blog-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+}
+
+.blog-wrapper .blog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 20px 40px rgba(116, 68, 253, 0.15);
+}
+
+.blog-wrapper .blog-card .thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-wrapper .blog-card .thumb img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: all 0.4s ease-in-out;
+  border-radius: 20px;
+}
+
+.blog-wrapper .blog-card:hover .thumb img {
+  transform: scale(1.1);
+}
+
+.blog-wrapper .blog-card .content {
+  padding: 30px;
+}
+
+.blog-wrapper .blog-card .content .meta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.blog-wrapper .blog-card .content .meta .date {
+  color: var(--text);
+  font-family: "Urbanist", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.blog-wrapper .blog-card .content .meta .author {
+  color: var(--text);
+  font-family: "Urbanist", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.blog-wrapper .blog-card .content h3 {
+  color: var(--title);
+  font-family: "Urbanist", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 15px;
+  transition: all 0.4s ease-in-out;
+}
+
+.blog-wrapper .blog-card .content h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.blog-wrapper .blog-card .content h3 a:hover {
+  color: var(--theme);
+}
+
+.blog-wrapper .blog-card .content p {
+  color: var(--text);
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+.blog-wrapper .blog-card .content .read-more {
+  color: var(--theme);
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.blog-wrapper .blog-card .content .read-more:hover {
+  color: var(--title);
+}
+
+@media (max-width: 991px) {
+  .blog-wrapper .section-title-area h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .blog-wrapper .section-title-area h2 {
+    font-size: 28px;
+  }
+
+  .blog-wrapper .blog-card .content {
+    padding: 20px;
+  }
+}

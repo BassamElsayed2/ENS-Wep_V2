@@ -1,0 +1,105 @@
+/*----------------------------------------------
+    # Container  style here
+----------------------------------------------*/
+@media (min-width: 550px) {
+  .header-1 .container {
+    max-width: 1620px;
+  }
+  .header-2 .container,
+  .header-3 .container {
+    max-width: 1620px;
+  }
+  .intro-container-wrapper.style1 .container {
+    max-width: 1820px;
+  }
+  .intro-wrapper.style1 .container {
+    max-width: 1450px;
+  }
+  .brand-slider-container-wrapper.style1 .container {
+    max-width: 1450px;
+  }
+  .brand-slider-container-wrapper.style2 .container {
+    max-width: 1450px;
+  }
+  .work-process-container-wrapper.style1 .container {
+    max-width: 1440px;
+  }
+  .advantage-container-wrapper.style1 .container {
+    max-width: 1820px;
+  }
+  .advantage-wrapper.style1 .container {
+    max-width: 1200px;
+  }
+  .counter-container-wrapper.style1 .container {
+    max-width: 1820px;
+  }
+  .counter-wrapper.style1 .container {
+    max-width: 1450px;
+  }
+  .testimonial-container-wrapper.style1 > .container {
+    max-width: 1820px;
+  }
+  .testimonial-container-wrapper.style2 > .container {
+    max-width: 1820px;
+  }
+  .cta-container-wrapper.style1 > .container {
+    max-width: 1820px;
+  }
+  .wcu-container-wrapper.style2 > .container {
+    max-width: 1820px;
+  }
+  .about-container-wrapper.style2 .container {
+    max-width: 1820px;
+  }
+  .about-wrapper.style2 .container {
+    max-width: 1450px;
+  }
+  .feature-container-wrapper.style1 .container {
+    max-width: 1820px;
+  }
+  .feature-wrapper.style1 .container {
+    max-width: 1450px;
+  }
+  .pricing-container-wrapper.style1 .container {
+    max-width: 1820px;
+  }
+  .pricing-wrapper.style1 .container {
+    max-width: 1450px;
+  }
+  .blog-container-wrapper.style1 .container {
+    max-width: 1820px;
+  }
+  .blog-wrapper.style1 .container {
+    max-width: 1450px;
+  }
+  .services-container-wrapper.style1 .container {
+    max-width: 1820px;
+  }
+  .services-wrapper.style1 .container {
+    max-width: 1450px;
+  }
+  .project-container-wrapper.style1 .container {
+    max-width: 1820px;
+  }
+  .project-wrapper.style1 .container {
+    max-width: 1450px;
+  }
+  .team-container-wrapper.style1 .container {
+    max-width: 1820px;
+  }
+  .team-wrapper.style1 .container {
+    max-width: 1450px;
+  }
+  .faq-container-wrapper.style1 .container {
+    max-width: 1820px;
+  }
+  .faq-wrapper.style1 .container {
+    max-width: 1450px;
+  }
+  .contact-container-wrapper.style1 .container {
+    max-width: 1820px;
+  }
+  .contact-wrapper.style1 .container {
+    max-width: 1450px;
+  }
+}

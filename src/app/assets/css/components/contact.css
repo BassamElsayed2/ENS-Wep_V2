@@ -1,0 +1,197 @@
+/*----------------------------------------------
+    # Contact section styles here
+----------------------------------------------*/
+.contact-wrapper {
+  position: relative;
+  overflow: hidden;
+  z-index: 9;
+}
+
+.contact-wrapper .section-title-area {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contact-wrapper .section-title-area .title {
+  margin-bottom: 20px;
+}
+
+.contact-wrapper .section-title-area .title .title-heading {
+  display: inline-block;
+  padding: 8px 24px;
+  background-color: var(--theme2);
+  color: var(--title);
+  font-family: "Urbanist", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 20px;
+  border-radius: 60px;
+  transform: rotate(-20deg);
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+}
+
+.contact-wrapper .section-title-area h2 {
+  color: var(--title);
+  font-family: "Urbanist", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+.contact-wrapper .section-title-area p {
+  color: var(--text);
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-wrapper .contact-form {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.contact-wrapper .contact-form .form-group {
+  margin-bottom: 25px;
+}
+
+.contact-wrapper .contact-form .form-group label {
+  color: var(--title);
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.contact-wrapper .contact-form .form-group input,
+.contact-wrapper .contact-form .form-group textarea {
+  width: 100%;
+  padding: 15px 20px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--white);
+  color: var(--text);
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: all 0.4s ease-in-out;
+}
+
+.contact-wrapper .contact-form .form-group input:focus,
+.contact-wrapper .contact-form .form-group textarea:focus {
+  outline: none;
+  border-color: var(--theme);
+  box-shadow: 0px 0px 0px 3px rgba(116, 68, 253, 0.1);
+}
+
+.contact-wrapper .contact-form .form-group textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.contact-wrapper .contact-form .submit-btn {
+  background: var(--theme);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  padding: 15px 40px;
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.contact-wrapper .contact-form .submit-btn:hover {
+  background: var(--title);
+  transform: translateY(-2px);
+  box-shadow: 0px 10px 20px rgba(116, 68, 253, 0.3);
+}
+
+.contact-wrapper .contact-info {
+  background: var(--theme2);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.contact-wrapper .contact-info .info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.contact-wrapper .contact-info .info-item .icon {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: var(--theme);
+  color: var(--white);
+  border-radius: 50%;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.contact-wrapper .contact-info .info-item .content h5 {
+  color: var(--title);
+  font-family: "Urbanist", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+
+.contact-wrapper .contact-info .info-item .content p {
+  color: var(--text);
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .contact-wrapper .section-title-area h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-wrapper .section-title-area h2 {
+    font-size: 28px;
+  }
+
+  .contact-wrapper .contact-form {
+    padding: 30px 20px;
+  }
+
+  .contact-wrapper .contact-info {
+    padding: 30px 20px;
+  }
+}

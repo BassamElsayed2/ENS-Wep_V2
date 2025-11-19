@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "img": "/assets/images/logo/brandLogo1_1.png"
+  },
+  {
+    "id": 2,
+    "img": "/assets/images/logo/brandLogo1_2.png" 
+  },
+  {
+    "id": 3,
+    "img": "/assets/images/logo/brandlogo13.png"
+  },
+  {
+    "id": 4,
+    "img": "/assets/images/logo/brandLogo1_4.png"
+  },  
+  {
+    "id": 5,
+    "img": "/assets/images/logo/brandLogo1_5.png"
+  },
+  {
+    "id": 6,
+    "img": "/assets/images/logo/brandlogo13.png"
+  }       
+]

@@ -1,0 +1,190 @@
+/*----------------------------------------------
+    # Hero Banner style here
+----------------------------------------------*/
+.hero-banner-wrapper {
+  position: relative;
+  overflow: hidden;
+  z-index: 9;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.hero-banner-wrapper::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  z-index: -1;
+  background: var(--theme);
+}
+
+.hero-banner-wrapper .shape-image {
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+}
+
+@media (max-width: 991px) {
+  .hero-banner-wrapper .shape-image {
+    display: none;
+  }
+}
+
+.hero-banner-wrapper .hero-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-banner-wrapper .hero-content .shape {
+  position: absolute;
+  top: 0px;
+  right: 180px;
+  animation: float-bob-x 5s linear infinite;
+  -webkit-animation: float-bob-x 5s linear infinite;
+}
+
+.hero-banner-wrapper .hero-content .title .title-heading {
+  display: inline-block;
+  padding: 8px 24px;
+  background-color: var(--theme2);
+  color: var(--title);
+  font-family: "Urbanist", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 20px;
+  border-radius: 60px;
+  transform: rotate(-20deg);
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+}
+
+.hero-banner-wrapper .hero-content h1 {
+  color: var(--white);
+  color: var(--theme2);
+  font-family: "Urbanist", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  max-width: 528px;
+}
+
+@media (max-width: 991px) {
+  .hero-banner-wrapper .hero-content h1 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero-banner-wrapper .hero-content h1 {
+    font-size: 42px;
+  }
+}
+
+.hero-banner-wrapper .hero-content .hero-banner-items {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+@media (max-width: 575px) {
+  .hero-banner-wrapper .hero-content .hero-banner-items {
+    margin-top: 15px;
+  }
+}
+
+.hero-banner-wrapper .hero-content .hero-banner-items li {
+  color: var(--theme2);
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.hero-banner-wrapper .hero-content .hero-banner-items li a {
+  color: var(--white);
+  transition: all 0.4s ease-in-out;
+}
+
+.hero-banner-wrapper .hero-content .hero-banner-items li a:hover {
+  color: var(--theme);
+}
+
+.hero-banner-wrapper .hero-content .hero-banner-items li i {
+  color: var(--white);
+  opacity: 0.8;
+}
+
+@media (max-width: 991px) {
+  .hero-banner-wrapper .hero-content {
+    display: block;
+  }
+  .hero-banner-wrapper .hero-content h1 {
+    max-width: 100%;
+  }
+}
+
+.hero-banner-wrapper .hero-banner-wrapper-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .hero-banner-wrapper .hero-banner-wrapper-items {
+    flex-wrap: wrap;
+  }
+}
+
+.hero-banner-wrapper .hero-banner-wrapper-items .hero-banner-image {
+  position: relative;
+  height: 380px;
+  margin-bottom: -50px;
+}
+
+@media (max-width: 991px) {
+  .hero-banner-wrapper .hero-banner-wrapper-items .hero-banner-image {
+    margin-bottom: 0;
+  }
+  .hero-banner-wrapper .hero-banner-wrapper-items .hero-banner-image img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.hero-banner-wrapper .hero-banner-wrapper-items .hero-banner-image .bar-shape {
+  position: absolute;
+  top: -60px;
+  bottom: 0;
+  left: -27%;
+  z-index: -1;
+}
+
+@media (max-width: 991px) {
+  .hero-banner-wrapper
+    .hero-banner-wrapper-items
+    .hero-banner-image
+    .bar-shape {
+    display: none;
+  }
+}
+
+.hero-banner-wrapper .hero-banner-wrapper-items .hero-banner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

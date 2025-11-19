@@ -1,0 +1,172 @@
+/*----------------------------------------------
+    # Services section styles here
+----------------------------------------------*/
+.services-wrapper {
+  position: relative;
+  overflow: hidden;
+  z-index: 9;
+}
+
+.services-wrapper .section-title-area {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.services-wrapper .section-title-area .title {
+  margin-bottom: 20px;
+}
+
+.services-wrapper .section-title-area .title .title-heading {
+  display: inline-block;
+  padding: 8px 24px;
+  background-color: var(--theme2);
+  color: var(--title);
+  font-family: "Urbanist", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 20px;
+  border-radius: 60px;
+  transform: rotate(-20deg);
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+}
+
+.services-wrapper .section-title-area h2 {
+  color: var(--title);
+  font-family: "Urbanist", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+.services-wrapper .section-title-area p {
+  color: var(--text);
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.services-wrapper .service-box {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.services-wrapper .service-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--theme);
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+}
+
+.services-wrapper .service-box:hover::before {
+  opacity: 1;
+}
+
+.services-wrapper .service-box:hover {
+  border-color: var(--theme);
+  transform: translateY(-10px);
+  box-shadow: 0px 20px 40px rgba(116, 68, 253, 0.15);
+}
+
+.services-wrapper .service-box .icon {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  background: var(--theme2);
+  border-radius: 50%;
+  margin: 0 auto 30px;
+  transition: all 0.4s ease-in-out;
+}
+
+.services-wrapper .service-box:hover .icon {
+  background: var(--white);
+  color: var(--theme);
+}
+
+.services-wrapper .service-box h3 {
+  color: var(--title);
+  font-family: "Urbanist", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 15px;
+  transition: all 0.4s ease-in-out;
+}
+
+.services-wrapper .service-box:hover h3 {
+  color: var(--white);
+}
+
+.services-wrapper .service-box p {
+  color: var(--text);
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 25px;
+  transition: all 0.4s ease-in-out;
+}
+
+.services-wrapper .service-box:hover p {
+  color: var(--white);
+}
+
+.services-wrapper .service-box .read-more {
+  color: var(--theme);
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.services-wrapper .service-box:hover .read-more {
+  color: var(--white);
+}
+
+@media (max-width: 991px) {
+  .services-wrapper .section-title-area h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .services-wrapper .section-title-area h2 {
+    font-size: 28px;
+  }
+
+  .services-wrapper .service-box {
+    padding: 30px 20px;
+  }
+}
