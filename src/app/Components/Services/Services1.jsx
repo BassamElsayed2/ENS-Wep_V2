@@ -2,11 +2,12 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useServices } from "../../../lib/hooks/useServices";
 
 const Services1 = ({ type = "services", pageNumber = null }) => {
   const locale = useLocale();
+  const t = useTranslations("Services1");
   const { data, loading, error } = useServices(type, pageNumber);
 
   console.log("Services1 Debug Info:");
@@ -20,11 +21,14 @@ const Services1 = ({ type = "services", pageNumber = null }) => {
 
   if (loading) {
     return (
-      <section className="service-section section-padding fix">
+      <section 
+        className="service-section section-padding fix"
+        dir={locale === "ar" ? "rtl" : "ltr"}
+      >
         <div className="service-container-wrapper style1">
           <div className="container">
             <div className="service-wrapper style1">
-              <div className="text-center">جاري تحميل الخدمات...</div>
+              <div className="text-center">{t("loading")}</div>
             </div>
           </div>
         </div>
@@ -34,11 +38,14 @@ const Services1 = ({ type = "services", pageNumber = null }) => {
 
   if (error) {
     return (
-      <section className="service-section section-padding fix">
+      <section 
+        className="service-section section-padding fix"
+        dir={locale === "ar" ? "rtl" : "ltr"}
+      >
         <div className="service-container-wrapper style1">
           <div className="container">
             <div className="service-wrapper style1">
-              <div className="text-center text-danger">خطأ: {error}</div>
+              <div className="text-center text-danger">{t("error")}: {error}</div>
             </div>
           </div>
         </div>
@@ -47,7 +54,10 @@ const Services1 = ({ type = "services", pageNumber = null }) => {
   }
 
   return (
-    <section className="service-section section-padding fix">
+    <section 
+      className="service-section section-padding fix"
+      dir={locale === "ar" ? "rtl" : "ltr"}
+    >
       <div className="service-container-wrapper style1">
         <div className="container">
           <div className="service-wrapper style1">

@@ -3,11 +3,30 @@ import { useEffect, useState } from "react";
 import Nav from "./Nav";
 import Link from "next/link";
 import Image from "next/image";
+import { useLocale } from "next-intl";
+
 export default function Header2({ variant }) {
   const [mobileToggle, setMobileToggle] = useState(false);
   const [isSticky, setIsSticky] = useState();
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [searchToggle, setSearchToggle] = useState(false);
+  const locale = useLocale();
+
+  // إعادة تهيئة الحالات عند تغيير اللغة
+  useEffect(() => {
+    setIsSticky(undefined);
+    setPrevScrollPos(window.scrollY);
+    setMobileToggle(false);
+    setSearchToggle(false);
+    
+    // إعادة تقييم حالة الهيدر بناءً على موضع التمرير الحالي
+    const currentScrollPos = window.scrollY;
+    if (currentScrollPos > 0) {
+      setIsSticky("cs-gescout_show cs-gescout_sticky");
+    } else {
+      setIsSticky(undefined);
+    }
+  }, [locale]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,15 +42,21 @@ export default function Header2({ variant }) {
     };
 
     window.addEventListener("scroll", handleScroll);
+    
+    // تقييم الحالة الأولية عند تحميل الصفحة
+    handleScroll();
 
     return () => {
       window.removeEventListener("scroll", handleScroll); // Cleanup the event listener
     };
-  }, [prevScrollPos]);
+  }, [prevScrollPos, locale]);
+
+  const isRTL = locale === "ar";
 
   return (
     <div>
       <header
+        dir={isRTL ? "rtl" : "ltr"}
         className={`cs_site_header header_style_2 header_style_3 cs_style_1 ${
           variant ? variant : ""
         } cs_sticky_header cs_site_header_full_width ${
@@ -44,14 +69,20 @@ export default function Header2({ variant }) {
               <div className="cs_main_header_left">
                 <Link className="cs_site_branding" href="/">
                   <Image
-                    src="/assets/images/logo/logo2.svg"
+                    src="/assets/images/logoar.png"
                     alt="img"
                     width={177}
                     height={54}
                   />
                 </Link>
               </div>
-              <div className="cs_main_header_center">
+              <div 
+                className="cs_main_header_center" 
+                style={{ 
+                  [isRTL ? 'marginRight' : 'marginLeft']: '40px', 
+                  [isRTL ? 'marginLeft' : 'marginRight']: '40px' 
+                }}
+              >
                 <div className="cs_nav cs_primary_font fw-medium">
                   <span
                     className={
@@ -74,11 +105,15 @@ export default function Header2({ variant }) {
                   >
                     <i className="bi bi-search"></i>
                   </a>
-                  <div className="header-button ms-4">
+                  <div className={`header-button ${isRTL ? "me-4" : "ms-4"}`}>
                     <Link href="/contact" className="theme-btn">
                       <span>
-                        Get Started
-                        <i className="bi bi-arrow-right"></i>
+                        {locale === "ar" ? "ابدأ الآن" : "Get Started"}
+                        {isRTL ? (
+                          <i className="bi bi-arrow-left"></i>
+                        ) : (
+                          <i className="bi bi-arrow-right"></i>
+                        )}
                       </span>
                     </Link>
                   </div>
@@ -88,7 +123,10 @@ export default function Header2({ variant }) {
           </div>
         </div>
       </header>
-      <div className={`search-wrap ${searchToggle ? "active" : ""}`}>
+      <div 
+        dir={isRTL ? "rtl" : "ltr"}
+        className={`search-wrap ${searchToggle ? "active" : ""}`}
+      >
         <div className="search-inner">
           <i
             onClick={() => setSearchToggle(!searchToggle)}
@@ -101,7 +139,7 @@ export default function Header2({ variant }) {
                 <input
                   type="search"
                   className="main-search-input"
-                  placeholder="Search..."
+                  placeholder={locale === "ar" ? "بحث..." : "Search..."}
                 />
               </div>
             </form>

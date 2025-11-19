@@ -127,6 +127,93 @@ body {
   font-family: var(--cairo-font), "Cairo", sans-serif !important;
 }
 
+/* RTL/LTR General Support */
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="ltr"] {
+  direction: ltr;
+  text-align: left;
+}
+
+/* RTL Support for common elements */
+[dir="rtl"] .text-start {
+  text-align: right !important;
+}
+
+[dir="rtl"] .text-end {
+  text-align: left !important;
+}
+
+[dir="ltr"] .text-start {
+  text-align: left !important;
+}
+
+[dir="ltr"] .text-end {
+  text-align: right !important;
+}
+
+/* RTL Support for margins and padding */
+[dir="rtl"] .ms-auto {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+[dir="rtl"] .me-auto {
+  margin-right: 0 !important;
+  margin-left: auto !important;
+}
+
+[dir="rtl"] .ps-0,
+[dir="rtl"] .ps-1,
+[dir="rtl"] .ps-2,
+[dir="rtl"] .ps-3,
+[dir="rtl"] .ps-4,
+[dir="rtl"] .ps-5 {
+  padding-right: var(--bs-gutter-x) !important;
+  padding-left: 0 !important;
+}
+
+[dir="rtl"] .pe-0,
+[dir="rtl"] .pe-1,
+[dir="rtl"] .pe-2,
+[dir="rtl"] .pe-3,
+[dir="rtl"] .pe-4,
+[dir="rtl"] .pe-5 {
+  padding-left: var(--bs-gutter-x) !important;
+  padding-right: 0 !important;
+}
+
+/* RTL Support for flexbox - only when flex-row is explicitly used */
+[dir="rtl"] .flex-row:not(.flex-column):not(.flex-column-reverse) {
+  flex-direction: row-reverse;
+}
+
+/* RTL Support for justify-content - be careful with this */
+[dir="rtl"] .justify-content-start:not(.flex-column) {
+  justify-content: flex-end !important;
+}
+
+[dir="rtl"] .justify-content-end:not(.flex-column) {
+  justify-content: flex-start !important;
+}
+
+/* RTL Support for icons and arrows */
+[dir="rtl"] svg[transform*="scale(-1"] {
+  transform: scaleX(1) !important;
+}
+
+/* RTL Support for float */
+[dir="rtl"] .float-start {
+  float: right !important;
+}
+
+[dir="rtl"] .float-end {
+  float: left !important;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -276,6 +363,11 @@ span {
   text-align: center;
   background: var(--theme);
   color: var(--white);
+}
+
+[dir="rtl"] .form-contl button {
+  right: auto;
+  left: 0;
 }
 .form-contl button.style2 {
   background: transparent;
@@ -6940,6 +7032,9 @@ input.main-search-input::placeholder {
 .work-process-box.style1.child2 {
   margin-top: 55px;
 }
+.work-process-box.style1.child2 .title {
+  margin-top: 15px;
+}
 .work-process-box.style1 .step {
   color: var(--theme);
   text-align: center;
@@ -6950,7 +7045,7 @@ input.main-search-input::placeholder {
   line-height: 28px;
   letter-spacing: -0.32px;
   display: inline-flex;
-  height: 24px;
+  min-height: 24px;
   padding: 7px 10px;
   justify-content: center;
   align-items: center;
@@ -6958,6 +7053,10 @@ input.main-search-input::placeholder {
   border-radius: 100px;
   background: rgba(116, 68, 253, 0.15);
   margin-bottom: 10px;
+  white-space: normal;
+  word-wrap: break-word;
+  max-width: 100%;
+  width: fit-content;
 }
 .work-process-box.style1 .title {
   color: var(--title);
@@ -12440,7 +12539,8 @@ html[dir="rtl"] .language-option:hover {
 
   .cs_nav .cs_nav_list > li .language-switcher-button {
     height: auto;
-    float: left;
+    display: inline-flex;
+    float: none;
   }
 }
 

@@ -676,5 +676,37 @@
     "description": "الصفحة التي تبحث عنها قد تم حذفها أو تغيير اسمها أو أنها غير متاحة مؤقتاً.",
     "backHome": "العودة للرئيسية",
     "contactUs": "اتصل بنا"
+  },
+  "Brand1": {
+    "title": "عملاء يعتمدون على خدماتنا",
+    "loading": "جاري تحميل العلامات التجارية...",
+    "noBrands": "لا توجد علامات تجارية متاحة في الوقت الحالي.",
+    "error": "خطأ"
+  },
+  "Services1": {
+    "loading": "جاري تحميل الخدمات...",
+    "error": "خطأ"
+  },
+  "ServicesDisplay": {
+    "loading": "جاري تحميل الخدمات...",
+    "error": "خطأ",
+    "noServices": "لا توجد خدمات متاحة",
+    "readMore": "اقرأ المزيد"
+  },
+  "ContactInfo": {
+    "addressTitle": "عنواننا",
+    "address": "ابن الفارض مع المعاهده أمام محلات المدينة المنورة",
+    "emailTitle": "info@ens.eg",
+    "emailText": "راسلنا معنا في اي وقت",
+    "phoneTitle": "+201553841793",
+    "phoneText": "تواصل معنا في اي وقت",
+    "formTitle": "جاهز للتواصل معنا",
+    "nameLabel": "الاسم الثلاثي*",
+    "namePlaceholder": "الاسم الثلاثي",
+    "emailLabel": "الايميل*",
+    "emailPlaceholder": "البريد الإلكتروني",
+    "messageLabel": "أكتب رسالتك*",
+    "messagePlaceholder": "اكتب رسالتك",
+    "sendButton": "أرسل"
   }
 }

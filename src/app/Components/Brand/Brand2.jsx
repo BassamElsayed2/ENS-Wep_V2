@@ -1,10 +1,12 @@
 "use client"
 import Slider from "react-slick";
+import { useLocale, useTranslations } from "next-intl";
 import data from '../../Data/brand1.json';
 import Image from "next/image";
 
 const Brand2 = () => {
-
+  const t = useTranslations("Brand1");
+  const locale = useLocale();
 
     const settings = {
         dots: false,
@@ -38,12 +40,15 @@ const Brand2 = () => {
       }; 
 
     return (
-        <div className="brand-slider-section section-padding-brand2 fix">
+        <div 
+          className="brand-slider-section section-padding-brand2 fix"
+          dir={locale === "ar" ? "rtl" : "ltr"}
+        >
             <div className="brand-slider-container-wrapper style2">
                 <div className="container">
                     <div className="brand-slider-wrapper style2">
                         <h2 className="single-section-title wow fadeInUp" data-wow-delay=".2s">
-                            Millions of clients trust us.
+                            {t("title")}
                         </h2>
                         <div className="row">
                             <div className="slider-area brandSliderTwo">

@@ -1,148 +1,152 @@
 {
   "HomePage": {
     "hero": {
-      "subtitle": "<span>News!</span> Find Your Solution",
-      "title": "We Develop Websites, Applications, and Brands.",
-      "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.",
-      "btn1": "Get Started Now",
-      "btn2": "Learn More",
-      "customers": "Happy Customers",
-      "rating": "Rating"
-    },
+  "subtitle": "<span>Go Ahead!</span> Safe and Innovative Digital Solutions",
+  "title": "We Design the Future of Technology with Confident Steps",
+  "content": "Welcome to the world of ENS, where creativity turns into technology that makes a difference.\nAt ENS, we develop software and design websites with high professionalism.\nWe transform your ideas into innovative digital solutions that keep pace with the future.",
+  "btn1": "Get Started",
+  "btn2": "Learn More",
+  "customers": "Comment",
+  "rating": "Rating"
+},
     "about": {
-      "subtitle": "About Our App",
-      "title": "Simple Reports & Analytics Backdown As it",
-      "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.",
-      "feature1": "With our Technological and Marketing Solutions.",
-      "feature2": "We are trusted all over the world.",
-      "feature3": "Start Your 14 Days Free Trials Today!",
+      "subtitle": "Advanced Technologies",
+      "title": "We Help You Develop Your Business",
+      "content": "We are here at ENS for software, we believe that technology is the key to opening new horizons for your growth. We specialize in developing innovative web platforms that ensure effective and interactive presence on the internet",
+      "feature1": "Integrated digital solutions",
+      "feature2": "From web to management",
+      "feature3": "Digital security and effective management",
       "btn": "Discover More"
     },
     "choose": {
-      "subtitle": "App Advantage",
-      "title": "Get Benefit By Using Trending Apps",
-      "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.",
-      "feature1": "Friendly Design",
-      "feature2": "SEO Optimized",
-      "feature3": "Cloud Storage",
-      "feature4": "Strong Security",
-      "btn": "Download App"
+      "subtitle": "Web Applications",
+      "title": "Web Solutions for Real Estate, Education, and News Platforms",
+      "content": "We unleash your digital potential with comprehensive web applications for the real estate sector, enabling effective property management and display while attracting customers through a seamless user experience. We also offer advanced solutions for news platforms, designed to handle high traffic and deliver content at high speed with interactive interfaces.\nOur work doesn't stop there, as we extend to developing integrated school applications that facilitate academic management processes and communication between educational staff, students, and parents. Every application we develop is based on principles of security, speed, and reliability",
+      "feature1": "Superior Performance and Speed",
+      "feature2": "Robust and Durable Backend Infrastructure",
+      "feature3": "Easy Management and Full Control",
+      "feature4": "Integrated Multi-language Support (Arabic and English)",
+      "btn": "Learn About Our Applications"
     },
     "cta": {
       "subtitle": "Our App",
-      "title": "Download our app and start your free trial today!",
-      "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form."
+      "title": "Start Your Free Trial Today!",
+      "content": "Clients can request a free one-week trial for any of our web applications. Whether it's the news script, the real estate script, or any of our other apps, you can explore all the features with no commitment. This trial period is designed to help you evaluate the app’s performance and see how well it fits your needs before committing to a subscription."
     }
   },
   "HowWork": {
-    "SubTitle": "How It Works",
-    "Title": "Make Your Device Manage Everything For You!",
-    "steps": [
+    "SubTitle": "Our Services",
+    "Title": "Advanced Services with the Latest Technologies",
+     "steps": [
       {
-        "step": "STEP - 01",
-        "title": "Download App",
-        "text": "There are many variations of passages of Lorem"
+        "step": "Website and Email Hosting",
+        "title": "Security | Speed | Reliability",
+        "text": "Guaranteeing data security and ensuring the continuous operation of your website 24/7"
       },
       {
-        "step": "STEP - 02",
-        "title": "Create account",
-        "text": "There are many variations of passages of Lorem"
+        "step": "Application Programming and Design",
+        "title": "Creativity | Performance | Interaction",
+        "text": "Integrating visual creativity with powerful performance to deliver a seamless and exceptional interactive experience"
       },
       {
-        "step": "STEP - 03",
-        "title": "Install App, & Enjoy",
-        "text": "There are many variations of passages of Lorem"
+        "step": "Networks and Security Solutions",
+        "title": "Delivery | Protection | Maintenance",
+        "text": "Ensuring data delivery efficiently, providing maximum protection for systems and networks"
       }
     ]
   },
   "Feature1": {
-    "SubTitle": "Why using our app",
-    "Title": "Our app is great for individuals, startups and enterprises",
+    "SubTitle": "Point of Sale Application",
+    "Title": "A comprehensive and easy-to-use application for small and medium-sized businesses",
     "features": [
       {
-        "title": "High usability",
-        "content": "There are many variations of passages of Lorem Ipsum"
+        "title": "High Performance and Responsiveness",
+        "content": "Instant processing of operations without slowing down even with a large number of products"
       },
       {
-        "title": "Action Reminder",
-        "content": "There are many variations of passages of Lorem Ipsum"
+        "title": "Strong and Secure Database",
+        "content": "Reliance on SQL Server ensures data accuracy"
       },
       {
-        "title": "Merge Files",
-        "content": "There are many variations of passages of Lorem Ipsum"
+        "title": "Instant Synchronization Between Branches",
+        "content": "It is possible to connect more than one branch and synchronize sales and inventory"
       },
       {
-        "title": "Free Live Chat",
-        "content": "There are many variations of passages of Lorem Ipsum"
+        "title": "Smart Inventory Management",
+        "content": "The system tracks product quantities, alerts on stock shortages"
       },
       {
-        "title": "Social Share",
-        "content": "There are many variations of passages of Lorem Ipsum"
+        "title": "Support for Devices and Printers",
+        "content": "Compatible with barcode readers, touch screens, and receipt printers"
       },
       {
-        "title": "Custom Shortcuts",
-        "content": "There are many variations of passages of Lorem Ipsum"
+        "title": "Analytical Dashboard",
+        "content": "Provides daily and monthly sales reports, analyzes profits, and products most sold"
       }
     ]
   },
   "Counter1": {
     "counters": [
-      { "text": "Customers visit app every month" },
-      { "text": "Total downloads of our app" },
-      { "text": "Total members of app users" },
-      { "text": "Satisfaction rate from our customers" }
+      { "text": "Customers Who Rely on Us" },
+      { "text": "Advanced Electronic Application" },
+      { "text": "Protection of Systems and Networks" },
+      { "text": "Operating without downtime" }
     ]
   },
   "FaqSection": {
     "subtitle": "FAQs",
-    "title": "Frequently Asked Questions",
-    "description": "There are many variations of passages of Lorem Ipsum available...",
+   "title": "Most Frequently Asked Questions",
+    "description": "We’ve gathered the most common questions about our services in hosting, software solutions, design, and corporate security. This section helps you easily understand what we offer and quickly find answers to your inquiries.",
     "faqItems": [
       {
-        "question": "How can I install the app?",
-        "answer": "You can download it from the App Store or Google Play."
+        "question": "What hosting plans do you offer, and can they be upgraded later?",
+        "answer": "we provide a range of hosting plans suitable for small businesses, medium-sized companies, and large enterprises. You can also upgrade your plan at any time without any downtime."
       },
       {
-        "question": "Is my data secure?",
-        "answer": "Yes, we use encryption and secure servers to protect your data."
+        "question": "Do you offer fully developed website designs with an easy control panel?",
+        "answer": "Yes, we create professional, fully responsive websites that work smoothly on all devices. We also provide an easy-to-use admin dashboard that allows you to edit content and manage pages without any technical experience."
       },
       {
-        "question": "How can I contact support?",
-        "answer": "You can reach us through email or our in-app chat support."
+        "question": "What types of security solutions do you offer for companies?",
+        "answer": "We provide advanced security measures that include firewalls, threat detection, server monitoring, encrypted backups, and network protection to ensure the highest level of security."
+      },
+      {
+        "question": "Can your software systems be integrated with a company’s existing systems?",
+        "answer": "Absolutely. We can connect our systems with any internal platform or existing database, and we provide full support for customization and development based on the company’s needs."
       }
     ]
   },
   "Footer": {
-    "description": "It is a long established fact that from will be distracted by the readable from when looking.",
+    "description": "ENS is a web technology company that provides comprehensive solutions in web programming and creating digital platforms of high quality.\nWe offer fast and secure website hosting that ensures the highest levels of performance and stability for your services.\nWe also provide advanced cybersecurity solutions to protect company data and secure their systems from various threats.\nWe are committed to ENS by providing reliable services that combine innovation and professionalism to support the success of your digital business.",
     "appStore": "App Store",
     "playStore": "Play Store",
     "pagesTitle": "Pages",
-    "utilityTitle": "Utility Pages",
+    "utilityTitle": "Help Pages",
     "home": "Home",
-    "about": "About Us",
+    "about": "About",
     "integrations": "Integrations",
     "features": "Features",
     "pricing": "Pricing",
-    "contact": "Contact Us",
+    "contact": "Contact",
     "blog": "Blog",
     "projectDetails": "Project Details",
     "team": "Our Team",
     "addressTitle": "Address",
-    "readyTitle": "Ready to get started?",
-    "readyText": "It is a long established fact that a reader will be distracted layout.",
-    "copyright": "Copyright © ENS All rights"
+    "readyTitle": "Are You Ready to Start?",
+    "readyText": "It is well known that the reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    "copyright": "Copyright © ENS All rights reserved"
   },
   "Blog1": {
-    "subtitle": "Our Blog",
-    "title": "Recent Articles And Latest Blog",
-    "workplace": "Workplace",
-    "byAdmin": "By Admin",
-    "services": "Services that printing at you is important",
-    "date": "Sep 30, 2024",
+    "subtitle": "Blog",
+    "title": "Important Articles",
+    "workplace": "Shared Hosting",
+    "byAdmin": "By ENS",
+    "services": "How to choose the best hosting plan for your company to ensure higher performance and stability?",
+    "date": "Sep 30, 2025",
     "coding": "Coding",
-    "checklist": "A checklist to improve your daily routine",
-    "technology": "Technology",
-    "help": "That will help you get 1% better every day"
+    "checklist": "The role of integrated network systems in improving productivity and simplifying technical infrastructure management",
+    "technology": "Cybersecurity Services",
+    "help": "The importance of modern security solutions in protecting company data and preventing cyber attacks"
   },
   "TestimonialSection": {
     "subtitle": "Testimonials",
@@ -150,21 +154,21 @@
     "items": [
       {
         "img": "/assets/images/testimonial/test1.png",
-        "title": "John Doe",
-        "subTitle": "Marketing Manager",
-        "desc": "This app completely changed how we manage our team’s workflow. It’s intuitive and fast!"
+        "title": "Nour Aldein",
+        "subTitle": "Retail Chain",
+        "desc": "The network setup service was excellent, all devices were connected efficiently, and information security has reached the highest level"
       },
       {
         "img": "/assets/images/testimonial/test2.png",
-        "title": "Sarah Smith",
-        "subTitle": "Designer",
-        "desc": "A wonderful experience! I highly recommend this for anyone looking to boost productivity."
+        "title": "ElSawra",
+        "subTitle": "Restaurant Chain",
+        "desc": "The collaboration with your team was smooth and professional, from developing the website to creating the internal networks"
       },
       {
         "img": "/assets/images/testimonial/test3.png",
-        "title": "Ahmed Ali",
-        "subTitle": "Software Engineer",
-        "desc": "The customer support is top-notch. I love how simple yet powerful this app is."
+        "title": "Laborex Pharma",
+        "subTitle": "Pharmaceutical Company",
+        "desc": "Your company provided us with an excellent experience in setting up network systems within our company"
       }
     ]
   },
@@ -671,5 +675,37 @@
     "description": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
     "backHome": "Back to Home",
     "contactUs": "Contact Us"
+  },
+  "Brand1": {
+    "title": "Millions of clients trust us.",
+    "loading": "Loading brands...",
+    "noBrands": "No brands available at the moment.",
+    "error": "Error"
+  },
+  "Services1": {
+    "loading": "Loading services...",
+    "error": "Error"
+  },
+  "ServicesDisplay": {
+    "loading": "Loading services...",
+    "error": "Error",
+    "noServices": "No services available",
+    "readMore": "Read More"
+  },
+  "ContactInfo": {
+    "addressTitle": "Our Address",
+    "address": "Ibn Al-Farid Street with Al-Ma'ahid Street, in front of Al-Madina Al-Munawara shops",
+    "emailTitle": "info@ens.eg",
+    "emailText": "Email us anytime.",
+    "phoneTitle": "+201553841793",
+    "phoneText": "Call us any time",
+    "formTitle": "Ready to Get Started?",
+    "nameLabel": "Your name*",
+    "namePlaceholder": "Your Name",
+    "emailLabel": "Your Email*",
+    "emailPlaceholder": "Your Email",
+    "messageLabel": "Write your message*",
+    "messagePlaceholder": "Write Message",
+    "sendButton": "Send Message"
   }
 }

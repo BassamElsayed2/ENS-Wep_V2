@@ -6,9 +6,10 @@ import LanguageSwitcher from "./LanguageSwitcher";
 export default function Nav({ setMobileToggle }) {
   const t = useTranslations();
   const locale = useLocale();
+  const isRTL = locale === "ar";
 
   return (
-    <ul className="cs_nav_list fw-medium">
+    <ul className="cs_nav_list fw-medium" dir={isRTL ? "rtl" : "ltr"}>
       <li>
         <Link href={`/${locale}`}>{t("navigation.home")}</Link>
       </li>
