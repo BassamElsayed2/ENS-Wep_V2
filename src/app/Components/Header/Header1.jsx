@@ -12,6 +12,22 @@ export default function Header1({ variant }) {
   const [searchToggle, setSearchToggle] = useState(false);
   const locale = useLocale();
 
+  // إعادة تهيئة الحالات عند تغيير اللغة
+  useEffect(() => {
+    setIsSticky(undefined);
+    setPrevScrollPos(window.scrollY);
+    setMobileToggle(false);
+    setSearchToggle(false);
+    
+    // إعادة تقييم حالة الهيدر بناءً على موضع التمرير الحالي
+    const currentScrollPos = window.scrollY;
+    if (currentScrollPos > 0) {
+      setIsSticky("cs-gescout_show cs-gescout_sticky");
+    } else {
+      setIsSticky(undefined);
+    }
+  }, [locale]);
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
@@ -26,15 +42,21 @@ export default function Header1({ variant }) {
     };
 
     window.addEventListener("scroll", handleScroll);
+    
+    // تقييم الحالة الأولية عند تحميل الصفحة
+    handleScroll();
 
     return () => {
       window.removeEventListener("scroll", handleScroll); // Cleanup the event listener
     };
-  }, [prevScrollPos]);
+  }, [prevScrollPos, locale]);
+
+  const isRTL = locale === "ar";
 
   return (
     <div>
       <header
+        dir={isRTL ? "rtl" : "ltr"}
         className={`cs_site_header header_style_2 cs_style_1 ${
           variant ? variant : ""
         } cs_sticky_header cs_site_header_full_width ${
@@ -54,7 +76,13 @@ export default function Header1({ variant }) {
                   />
                 </Link>
               </div>
-              <div className="cs_main_header_center">
+              <div 
+                className="cs_main_header_center" 
+                style={{ 
+                  [isRTL ? 'marginRight' : 'marginLeft']: '40px', 
+                  [isRTL ? 'marginLeft' : 'marginRight']: '40px' 
+                }}
+              >
                 <div className="cs_nav cs_primary_font fw-medium">
                   <span
                     className={
@@ -99,7 +127,10 @@ export default function Header1({ variant }) {
           </div>
         </div>
       </header>
-      <div className={`search-wrap ${searchToggle ? "active" : ""}`}>
+      <div 
+        dir={isRTL ? "rtl" : "ltr"}
+        className={`search-wrap ${searchToggle ? "active" : ""}`}
+      >
         <div className="search-inner">
           <i
             onClick={() => setSearchToggle(!searchToggle)}

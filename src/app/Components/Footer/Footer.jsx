@@ -7,8 +7,10 @@ const Footer = () => {
   const t = useTranslations("Footer");
   const locale = useLocale();
 
+  const dir = locale === "ar" ? "rtl" : "ltr";
+
   return (
-    <footer className="footer-section position-relative" dir="rtl">
+    <footer className="footer-section position-relative" dir={dir}>
       <div className="footer-widgets-wrapper style1 fix">
         <div className="shape1">
           <img src="/assets/images/shape/footerShape1_1.png" alt="shape" />
@@ -195,7 +197,7 @@ const Footer = () => {
 
       <div className="footer-bottom style1">
         <div className="container">
-          <div className="footer-wrapper d-flex align-items-center justify-content-between">
+          <div className="footer-wrapper d-flex align-items-center justify-content-center">
             <p className="wow fadeInLeft" data-wow-delay=".3s">
               {t("copyright")}
             </p>

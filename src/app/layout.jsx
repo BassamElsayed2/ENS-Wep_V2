@@ -37,7 +37,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning={true}>
+    <html suppressHydrationWarning={true}>
       <head>
         <meta name="author" content="Themeservices" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -49,8 +49,10 @@ export default function RootLayout({ children }) {
                 const locale = path.split('/')[1];
                 const validLocales = ['ar', 'en'];
                 const finalLocale = validLocales.includes(locale) ? locale : 'ar';
+                const dir = finalLocale === 'ar' ? 'rtl' : 'ltr';
                 document.documentElement.setAttribute('lang', finalLocale);
-                document.documentElement.setAttribute('dir', finalLocale === 'ar' ? 'rtl' : 'ltr');
+                document.documentElement.setAttribute('dir', dir);
+                document.body.setAttribute('dir', dir);
               })();
             `,
           }}

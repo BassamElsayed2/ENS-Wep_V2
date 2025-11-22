@@ -2,10 +2,13 @@
 import { useState, useEffect } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
+import { useLocale, useTranslations } from "next-intl";
 import { getAllBrands } from "../../../lib/api/services";
 import brandsData from "../../Data/brand1.json";
 
 const Brand1 = () => {
+  const t = useTranslations("Brand1");
+  const locale = useLocale();
   const [brands, setBrands] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -66,7 +69,10 @@ const Brand1 = () => {
 
   if (loading) {
     return (
-      <div className="brand-slider-section section-padding fix">
+      <div 
+        className="brand-slider-section section-padding fix"
+        dir={locale === "ar" ? "rtl" : "ltr"}
+      >
         <div className="brand-slider-container-wrapper style1">
           <div className="container">
             <div className="brand-slider-wrapper style1">
@@ -74,11 +80,11 @@ const Brand1 = () => {
                 className="single-section-title wow fadeInUp"
                 data-wow-delay=".2s"
               >
-                Millions of clients trust us.
+                {t("title")}
               </h2>
               <div className="row">
                 <div className="text-center">
-                  <p>Loading brands...</p>
+                  <p>{t("loading")}</p>
                 </div>
               </div>
             </div>
@@ -90,7 +96,10 @@ const Brand1 = () => {
 
   if (!brands || brands.length === 0) {
     return (
-      <div className="brand-slider-section section-padding fix">
+      <div 
+        className="brand-slider-section section-padding fix"
+        dir={locale === "ar" ? "rtl" : "ltr"}
+      >
         <div className="brand-slider-container-wrapper style1">
           <div className="container">
             <div className="brand-slider-wrapper style1">
@@ -98,11 +107,11 @@ const Brand1 = () => {
                 className="single-section-title wow fadeInUp"
                 data-wow-delay=".2s"
               >
-                عملاء يعتمدون على خدماتنا
+                {t("title")}
               </h2>
               <div className="row">
                 <div className="text-center">
-                  <p>No brands available at the moment.</p>
+                  <p>{t("noBrands")}</p>
                 </div>
               </div>
             </div>
@@ -113,7 +122,10 @@ const Brand1 = () => {
   }
 
   return (
-    <div className="brand-slider-section section-padding fix">
+    <div 
+      className="brand-slider-section section-padding fix"
+      dir={locale === "ar" ? "rtl" : "ltr"}
+    >
       <div className="brand-slider-container-wrapper style1">
         <div className="container">
           <div className="brand-slider-wrapper style1">
@@ -121,7 +133,7 @@ const Brand1 = () => {
               className="single-section-title wow fadeInUp"
               data-wow-delay=".2s"
             >
-          عملاء يعتمدون على خدماتنا
+              {t("title")}
             </h2>
             <div className="row">
               <div className="slider-area brandSliderOne">

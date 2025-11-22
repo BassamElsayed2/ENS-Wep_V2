@@ -1,10 +1,13 @@
-import { useLocale } from "next-intl";
+"use client";
+
+import { useLocale, useTranslations } from "next-intl";
 
 const ContactInfo = () => {
   const locale = useLocale();
+  const t = useTranslations("ContactInfo");
 
   return (
-    <div>
+    <div dir={locale === "ar" ? "rtl" : "ltr"}>
       <section className="contact-section section-padding fix">
         <div className="container">
           <div className="contact-wrapper style1">
@@ -31,10 +34,10 @@ const ContactInfo = () => {
                       </svg>
                     </div>
                     <div className="title">
-                      {locale === "ar" ? "عنواننا" : "Our Address"}
+                      {t("addressTitle")}
                     </div>
                     <a className="text" href="#">
-                      ابن الفارض مع المعاهده أمام محلات المدينة المنورة
+                      {t("address")}
                     </a>
                   </div>
                 </div>
@@ -80,13 +83,11 @@ const ContactInfo = () => {
                       </svg>
                     </div>
                     <h3 className="title">
-                      <a href="mailto:info@ens.eg"> info@ens.eg </a>
+                      <a href="mailto:info@ens.eg"> {t("emailTitle")} </a>
                     </h3>
 
                     <p className="text">
-                      {locale === "ar"
-                        ? "راسلنا معنا في اي وقت"
-                        : "Email us anytime ."}
+                      {t("emailText")}
                     </p>
                   </div>
                 </div>
@@ -113,13 +114,11 @@ const ContactInfo = () => {
                       </svg>
                     </div>
                     <h3 className="title">
-                      <a href="tel:201553841793"> +201553841793 </a>
+                      <a href="tel:201553841793"> {t("phoneTitle")} </a>
                     </h3>
 
                     <p className="text">
-                      {locale === "ar"
-                        ? "تواصل معنا في اي وقت "
-                        : "Call us any time"}
+                      {t("phoneText")}
                     </p>
                   </div>
                 </div>
@@ -144,9 +143,7 @@ const ContactInfo = () => {
               <div className="col-xl-6">
                 <div className="contact-form style1">
                   <h2 className="contact-title">
-                    {locale === "ar"
-                      ? "جاهز للتواصل معنا"
-                      : "Ready to Get Started?"}
+                    {t("formTitle")}
                   </h2>
 
                   <form id="contact-form" className="contact-form-items">
@@ -157,13 +154,13 @@ const ContactInfo = () => {
                       >
                         <div className="form-clt">
                           <span>
-                            {locale === "ar" ? "الاسم الثلاثي*" : "Your name*"}
+                            {t("nameLabel")}
                           </span>
                           <input
                             type="text"
                             name="name"
                             id="name"
-                            placeholder="Your Name"
+                            placeholder={t("namePlaceholder")}
                           />
                         </div>
                       </div>
@@ -173,13 +170,13 @@ const ContactInfo = () => {
                       >
                         <div className="form-clt">
                           <span>
-                            {locale === "ar" ? "الايميل" : " Your Email*"}
+                            {t("emailLabel")}
                           </span>
                           <input
                             type="text"
                             name="email2"
                             id="email2"
-                            placeholder="Your Email"
+                            placeholder={t("emailPlaceholder")}
                           />
                         </div>
                       </div>
@@ -189,14 +186,12 @@ const ContactInfo = () => {
                       >
                         <div className="form-clt">
                           <span>
-                            {locale === "ar"
-                              ? "أكتب رسالتك*"
-                              : "Writhe your message"}
+                            {t("messageLabel")}
                           </span>
                           <textarea
                             name="message"
                             id="message"
-                            placeholder="Write Message"
+                            placeholder={t("messagePlaceholder")}
                           ></textarea>
                         </div>
                       </div>
@@ -205,7 +200,7 @@ const ContactInfo = () => {
                         data-wow-delay=".9s"
                       >
                         <button type="submit" className="theme-btn">
-                          {locale === "ar" ? "أرسل" : "Send Message"}{" "}
+                          {t("sendButton")}{" "}
                           <i
                             className={`bi ${
                               locale === "ar"

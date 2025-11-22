@@ -26,7 +26,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useServices } from "../../../lib/hooks/useServices";
 
 export default function ServicesDisplay({
@@ -37,6 +37,7 @@ export default function ServicesDisplay({
   showReadMore = true,
 }) {
   const locale = useLocale();
+  const t = useTranslations("ServicesDisplay");
   const { data, loading, error } = useServices(type, pageNumber);
 
   // Get title based on type
@@ -64,6 +65,7 @@ export default function ServicesDisplay({
     return (
       <div
         className="services-display-loading"
+        dir={locale === "ar" ? "rtl" : "ltr"}
         style={{
           padding: "2rem",
           textAlign: "center",
@@ -71,7 +73,7 @@ export default function ServicesDisplay({
           borderRadius: "8px",
         }}
       >
-        {locale === "ar" ? "جاري تحميل الخدمات..." : "Loading services..."}
+        {t("loading")}
       </div>
     );
   }
@@ -80,6 +82,7 @@ export default function ServicesDisplay({
     return (
       <div
         className="services-display-error"
+        dir={locale === "ar" ? "rtl" : "ltr"}
         style={{
           padding: "1.5rem",
           background: "#ffebee",
@@ -88,7 +91,7 @@ export default function ServicesDisplay({
           border: "1px solid #ef5350",
         }}
       >
-        <strong>{locale === "ar" ? "خطأ:" : "Error:"}</strong> {error}
+        <strong>{t("error")}:</strong> {error}
       </div>
     );
   }
@@ -97,6 +100,7 @@ export default function ServicesDisplay({
     return (
       <div
         className="services-display-empty"
+        dir={locale === "ar" ? "rtl" : "ltr"}
         style={{
           padding: "2rem",
           textAlign: "center",
@@ -105,13 +109,16 @@ export default function ServicesDisplay({
           border: "1px solid #ffc107",
         }}
       >
-        {locale === "ar" ? "لا توجد خدمات متاحة" : "No services available"}
+        {t("noServices")}
       </div>
     );
   }
 
   return (
-    <section className="services-display section-padding">
+    <section 
+      className="services-display section-padding"
+      dir={locale === "ar" ? "rtl" : "ltr"}
+    >
       <div className="container">
         {showTitle && (
           <div
@@ -244,8 +251,10 @@ export default function ServicesDisplay({
                     e.currentTarget.style.gap = "4px";
                   }}
                 >
-                  {locale === "ar" ? "اقرأ المزيد" : "Read More"}
-                  <span style={{ marginLeft: "4px" }}>→</span>
+                  {t("readMore")}
+                  <span style={{ marginLeft: locale === "ar" ? "0" : "4px", marginRight: locale === "ar" ? "4px" : "0" }}>
+                    {locale === "ar" ? "←" : "→"}
+                  </span>
                 </Link>
               )}
             </div>

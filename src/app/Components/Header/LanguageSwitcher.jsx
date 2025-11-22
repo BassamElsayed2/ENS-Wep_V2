@@ -1,7 +1,7 @@
 "use client";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
-import { useState, useTransition } from "react";
+import { useState, useTransition, useEffect } from "react";
 
 export default function LanguageSwitcher() {
   const t = useTranslations("languages");
@@ -10,6 +10,11 @@ export default function LanguageSwitcher() {
   const pathname = usePathname();
   const [isPending, startTransition] = useTransition();
   const [isOpen, setIsOpen] = useState(false);
+
+  // إعادة تهيئة الحالة عند تغيير اللغة
+  useEffect(() => {
+    setIsOpen(false);
+  }, [locale]);
 
   const languages = [
     { code: "ar", name: "العربية", short: "AR" },

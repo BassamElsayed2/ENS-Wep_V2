@@ -7,9 +7,12 @@
 
 import Slider from "react-slick";
 import Image from "next/image";
+import { useLocale, useTranslations } from "next-intl";
 import { useBrands } from "../../../lib/hooks/useBrands";
 
 const Brand1 = () => {
+  const t = useTranslations("Brand1");
+  const locale = useLocale();
   const { data, loading, error } = useBrands();
 
   const settings = {
@@ -46,11 +49,14 @@ const Brand1 = () => {
 
   if (loading) {
     return (
-      <div className="brand-slider-section section-padding fix">
+      <div 
+        className="brand-slider-section section-padding fix"
+        dir={locale === "ar" ? "rtl" : "ltr"}
+      >
         <div className="brand-slider-container-wrapper style1">
           <div className="container">
             <div className="brand-slider-wrapper style1">
-              <div className="text-center">Loading brands...</div>
+              <div className="text-center">{t("loading")}</div>
             </div>
           </div>
         </div>
@@ -60,11 +66,14 @@ const Brand1 = () => {
 
   if (error) {
     return (
-      <div className="brand-slider-section section-padding fix">
+      <div 
+        className="brand-slider-section section-padding fix"
+        dir={locale === "ar" ? "rtl" : "ltr"}
+      >
         <div className="brand-slider-container-wrapper style1">
           <div className="container">
             <div className="brand-slider-wrapper style1">
-              <div className="text-center text-danger">Error: {error}</div>
+              <div className="text-center text-danger">{t("error")}: {error}</div>
             </div>
           </div>
         </div>
@@ -73,7 +82,10 @@ const Brand1 = () => {
   }
 
   return (
-    <div className="brand-slider-section section-padding fix">
+    <div 
+      className="brand-slider-section section-padding fix"
+      dir={locale === "ar" ? "rtl" : "ltr"}
+    >
       <div className="brand-slider-container-wrapper style1">
         <div className="container">
           <div className="brand-slider-wrapper style1">
@@ -81,7 +93,7 @@ const Brand1 = () => {
               className="single-section-title wow fadeInUp"
               data-wow-delay=".2s"
             >
-              Millions of clients trust us.
+              {t("title")}
             </h2>
             <div className="row">
               <div className="slider-area brandSliderOne">
