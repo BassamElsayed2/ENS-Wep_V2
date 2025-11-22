@@ -99,7 +99,7 @@ const Footer = () => {
             </div>
 
             <div
-              className="col-xl-2 col-lg-4 col-md-6 col-6 wow fadeInUp"
+              className="col-xl-2 col-lg-4 col-md-6 col-6  wow fadeInUp"
               data-wow-delay=".8s"
             >
               <div className="single-footer-widget">
