@@ -218,7 +218,7 @@ const HeroBanner1 = ({
                 <div className="col-xl-5 order-1 order-xl-2 ">
                   <div className="intro-thumb">
                     <video
-                      className="main-thumb img-custom-anim-right wow fadeInUp d-none d-xl-block "
+                      className="main-thumb img-custom-anim-right wow fadeInUp  "
                       src="/HeroVideo.mp4"
                       autoPlay
                       muted
