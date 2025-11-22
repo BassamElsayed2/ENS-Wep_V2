@@ -64,7 +64,7 @@ const HeroBanner1 = ({
             </div>
             <div className="container">
               <div className="row">
-                <div className="col-xl-7 order-2 order-xl-1">
+                <div className="col-xl-7 order-2 order-xl-1 ">
                   <div className="intro-content">
                     <div className="intro-section-title">
                       <div className="intro-subtitle">
@@ -215,10 +215,10 @@ const HeroBanner1 = ({
                     </div>
                   </div>
                 </div>
-                <div className="col-xl-5 order-1 order-xl-2 ">
+                <div className="col-xl-5 order-1 order-xl-2  px-0">
                   <div className="intro-thumb">
                     <video
-                      className="main-thumb img-custom-anim-right wow fadeInUp  "
+                      className=" mobile-video wow fadeInUp  "
                       src="/HeroVideo.mp4"
                       autoPlay
                       muted

@@ -12685,3 +12685,12 @@ html[dir="rtl"] .language-option:hover {
     display: none;
   }
 }
+
+@media (max-width: 1200px) {
+ .intro-wrapper.style1 .intro-thumb {
+    padding: 0;
+  }
+  .mobile-video {
+    width: 100%;
+  }
+}
